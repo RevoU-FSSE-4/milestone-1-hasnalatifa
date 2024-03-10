@@ -1,0 +1,423 @@
+/* ReviewMe CSS */
+.logo {
+    display: flex;
+    gap: 10px;
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 20px;
+    color: #E91E63;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #000000;
+    margin: 10px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: auto; 
+}
+ 
+ .hero {
+    background-image: url('cpg_hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-end; 
+    text-align: right;
+    padding: 20px;
+    font-family: 'Merienda', sans-serif;
+ }
+  
+ .hero h1 {
+    font-size: 2.5em;
+    text-align: left; 
+    max-width: 800px;
+    margin-left: 20px;
+    margin-right: 20px;  
+    font-weight: 700;
+    font-size: 50px;
+}
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ } 
+
+ .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+ }
+ 
+ .hero * {
+    position: relative;
+    z-index: 2;
+ } 
+ 
+ body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;width: 100%;
+ }
+ 
+ .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    position: relative;
+    overflow: auto;
+    overflow-x: auto;
+    font-size: 13px;
+ }
+ 
+ .navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    z-index: 1000;
+    padding: 0 200px;
+ }
+ 
+ .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding-right: 0;
+    padding: 0; 
+    width: 100%;
+    max-width: 1800px; 
+ }
+ 
+ .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 10px; 
+ }
+ 
+ .nav-links li {
+    margin-left: 40px;
+    list-style-type: none;
+ } 
+ 
+ .nav-links a {
+    text-decoration: none;
+    color: #a04664;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;   
+    pointer-events: auto;
+    z-index: 1;
+    display: block; 
+    padding: 10px 15px;
+    cursor: pointer;
+ } 
+ 
+ .nav-links a:hover {
+    color: #481f2d;
+    background-color: #eaeaea;
+ }
+ 
+ .vision-section {
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.vision-section h2 {
+    font-size: 20px; 
+    margin-bottom: 30px;
+}
+
+.visions-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membuat dua kolom */
+    grid-gap: 15px; /* Menentukan jarak antar item */
+    justify-content: center;
+    align-items: center;
+}
+
+.vision-item {
+    background: #ffe8fb; /* Warna latar belakang untuk setiap item */
+    border: 1px solid #eaeaea; /* Border tipis untuk item */
+    border-radius: 10px; /* Memberikan sudut yang bulat */
+    padding: 20px;
+    text-align: left; /* Menyatukan teks ke kiri */
+}
+
+.vision-item img {
+    width: 30px; /* Menyesuaikan ukuran ikon */
+    height: auto;
+    margin: 0 auto 20px; /* Menengahkan ikon dan memberi jarak ke teks */
+    display: block;
+}
+
+.vision-item h3 {
+    margin: 0 0 10px; /* Memberi jarak antara judul dan deskripsi */
+}
+
+.vision-item p {
+    font-size: 12px; /* Menyesuaikan ukuran teks deskripsi */
+    line-height: 1.6; /* Meningkatkan keterbacaan teks */
+}
+
+ .reviews-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.review-options {
+    list-style: none;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Menambahkan ini jika Anda ingin baris wrap pada layar yang lebih kecil */
+    gap: 80px;
+}
+
+.review-options li {
+    display: flex;
+    flex-direction: column; /* Tumpukan vertikal untuk ikon dan teks */
+    align-items: center; /* Pusatkan item secara vertikal */
+    text-align: center;
+}
+
+.review-options img.icon {
+    width: 50px; /* Atur ukuran ikon */
+    height: auto;
+    margin-bottom: 8px; /* Jarak antara ikon dan teks */
+}
+.new-products {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Menata item secara vertikal */
+    align-items: center; /* Menengahkan item secara horizontal */
+}
+
+.products-container {
+    display: flex;
+    justify-content: center; /* Menengahkan produk secara horizontal */
+    flex-wrap: wrap; /* Memungkinkan item untuk wrap pada layar kecil */
+    gap: 20px; /* Menjaga jarak antara produk */
+    max-width: 1200px; /* Atau lebar maksimum yang diinginkan */
+    margin: 0 auto; /* Menengahkan container secara horizontal */
+    align-items: stretch; /* Meregangkan semua anak sehingga memiliki tinggi yang sama */
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Menyeimbangkan ruang */
+    align-items: center; /* Menengahkan item secara horizontal */
+    flex: 0 0 auto;
+    width: 200px; /* Atau sesuaikan berdasarkan kebutuhan */
+    margin: 10px; /* Jaga jarak antar produk */
+    border: 2px solid #ffb5e9;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    height: 100%; /* Membuat semua kotak produk memiliki tinggi yang sama */
+}
+
+.product img {
+    width: 100%; /* Membuat gambar responsif */
+    height: auto;
+    border-radius: 8px; /* Memberikan sudut yang bulat pada gambar */
+    margin-bottom: 30px; /* Menambahkan sedikit ruang antara gambar dan teks */
+}
+
+.product h3 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: left; 
+}
+
+.product p {
+    font-size: 13px;
+    line-height: 1; /* Menambahkan sedikit ruang antar baris */
+    text-align: left; /* Membuat teks rata kiri-kanan untuk keterbacaan */
+    min-height: 100px; /* Contoh tinggi minimum, sesuaikan sesuai kebutuhan */
+    margin-bottom: 20px; /* Menambahkan ruang antara deskripsi dan tombol */
+}
+
+.read-more {
+    padding: 10px 15px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    background-color: #ea6dcd; /* Warna latar belakang tombol */
+    padding: 10px 15px; /* Padding di sekitar teks */
+    margin-top: 10px; /* Margin di atas tombol */
+    transition: background-color 0.3s; /* Efek transisi untuk hover */
+    transition: transform 0.3s ease; /* Animasi zoom */
+}
+
+.read-more:hover {
+    background-color: #620058; /* Mengubah warna latar belakang saat di-hover */
+    transform: scale(1.08); /* Membuat tombol sedikit lebih besar saat hover dan focus */
+}
+.about-us {
+    background-image: url('background\ about\ us.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 40px 0;
+}
+
+.about-us .container {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.about-us h2 {
+    color: #8e3172; 
+    margin-bottom: 20px; 
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #f1c1e1;
+}
+
+.about-us p {
+    color: #333; 
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+    font-size: 12 px;
+}
+
+ .request-review {
+    background-color: #FAFAFA;
+    padding: 50px 0;
+    text-align: center;
+ }
+ 
+ .request-review h2 {
+    margin-bottom: 20px;
+ }
+ 
+ .request-review form {
+    max-width: 500px;
+    margin: auto;
+ }
+ 
+ .request-review input, .request-review button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ }
+ 
+ .request-review button {
+    background-color: #E91E63;
+    color: white;
+    border: none;
+    cursor: pointer;
+ }
+ 
+ .request-review input:focus, .request-review button:focus {
+    outline: none;
+    border-color: #E91E63;
+ }
+ 
+ .form-group {
+    margin-bottom: 15px; /* Memberikan jarak antar form group */
+ }
+ 
+ .product-category {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px; /* Memberikan jarak sebelum input produk */
+ }
+ 
+ .product-category > div {
+    display: flex;
+    align-items: center;
+ }
+ 
+ footer {
+    background-color: #FAFAFA;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+ }
+ 
+ @media (max-width: 768px) {
+    .logo {
+        font-size: 20px; /* Mengurangi ukuran logo */
+        gap: 5px; /* Mengurangi jarak antara ikon dan teks logo */
+    }
+
+    .logo-icon {
+        width: 35px; /* Mengurangi ukuran ikon logo */
+    }
+
+    .hero {
+        align-items: center; /* Menyelaraskan konten kembali ke tengah */
+        text-align: center; /* Teks rata tengah untuk pembacaan yang lebih baik pada layar kecil */
+        padding: 20px; /* Menyesuaikan padding untuk layar kecil */
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Mengurangi ukuran font hero */
+        margin-left: 15px; /* Mengurangi margin kiri */
+        margin-right: 0; /* Menghilangkan margin kanan pada layar kecil */
+    }
+
+    .nav-links li {
+        margin-left: 20px; /* Mengurangi jarak antar link navbar */
+    }
+
+    .vision-section h2 {
+        font-size: 18px; /* Mengurangi ukuran judul visi */
+    }
+
+    .visions-container {
+        grid-template-columns: 1fr; /* Mengubah grid menjadi 1 kolom */
+    }
+
+    .product, .review-options li {
+        width: 100%; /* Mengatur lebar produk dan review options agar responsif */
+        max-width: 300px; /* Maksimal lebar untuk elemen ini */
+        margin: 0 auto; /* Menengahkan elemen */
+    }
+}
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5em; /* Lebih mengurangi ukuran font untuk hero */
+        margin-left: 10px; /* Mengurangi margin kiri */
+    }
+
+    .nav-links li {
+        margin-left: 10px; /* Mengurangi jarak antar link navbar */
+    }
+
+    .vision-section h2, .reviews-section h2, .new-products h2 {
+        font-size: 16px; /* Mengurangi ukuran judul lebih lanjut */
+    }
+
+    .vision-item, .review-item, .product {
+        padding: 15px; /* Mengurangi padding */
+    }
+}
