@@ -1,6 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/NtxSJSoQ)
 
-Hello! This is my milestone 1 project: reviewmeproduct.site
+Hello! This is my milestone 1 project: [reviewmeproduct.site](https://reviewmeproduct.site/)
 
 First, find the images and icons you need. Here, I find icons on the website flaticon.com.
 
